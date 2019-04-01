@@ -19,7 +19,6 @@ class City:
             self.Town_Street(city_url)
 
     def Town_Street(self, city_url):
-
         town_html = requests.get(city_url)
         town_html.encoding = town_html.apparent_encoding
         xp = etree.HTML(town_html.text).xpath
