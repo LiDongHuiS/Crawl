@@ -11,6 +11,7 @@ class City:
         self.url = 'http://www.tcmap.com.cn/'
 
     def City_Url(self):
+        
         html = requests.get(self.url)
         html.encoding = 'gb2312'
         city_url = etree.HTML(html.text).xpath('//*[@class="ht"]/b/a/@href')
@@ -19,6 +20,7 @@ class City:
             self.Town_Street(city_url)
 
     def Town_Street(self, city_url):
+
         town_html = requests.get(city_url)
         town_html.encoding = town_html.apparent_encoding
         xp = etree.HTML(town_html.text).xpath
