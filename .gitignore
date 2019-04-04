@@ -4,6 +4,7 @@
 *.log
 *.db
 *.png
+*.jpg
 *.spec
 dist/
 build/
