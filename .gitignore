@@ -1,0 +1,9 @@
+!.gitignore
+/.idea/*
+*.pyc
+*.log
+*.db
+*.png
+*.spec
+dist/
+build/
