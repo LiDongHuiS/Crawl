@@ -10,6 +10,9 @@ class ImgCrawl:
         self.url = 'https://www.58pic.com/'
 
     def imgUrl(self):
+
+
+
         pass
 
 
