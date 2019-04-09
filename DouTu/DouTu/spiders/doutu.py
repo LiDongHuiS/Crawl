@@ -6,7 +6,7 @@ from ..items import DoutuItem
 class DoutuSpider(scrapy.Spider):
     name = 'doutu'
     allowed_domains = ["doutula.com", "sinaimg.cn"]
-    start_urls = ['https://www.doutula.com/photo/list/?page={}'.format(i) for i in range(1, 1001)]
+    start_urls = ['https://www.doutula.com/photo/list/?page={}'.format(i) for i in range(1, 2299)]
 
     def parse(self, response):
         i = 0
