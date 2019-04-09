@@ -17,7 +17,7 @@ logger = logging.getLogger('QiantuPipeline')
 class QiantuPipeline(ImagesPipeline):
 
     def get_media_requests(self, item, info):
-        logging.debug('图片下载完成')
+        # logging.debug('图片下载完成')
         yield scrapy.Request(url=item['src'], meta={'item': item})
 
     def item_completed(self, results, item, info):

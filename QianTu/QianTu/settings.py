@@ -15,7 +15,7 @@ SPIDER_MODULES = ['QianTu.spiders']
 NEWSPIDER_MODULE = 'QianTu.spiders'
 
 
-DOWNLOAD_DELAY = 2
+DOWNLOAD_DELAY = 0.5
 RANDOMIZE_DOWNLOAD_DELAY = True
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 USER_AGENT = 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36'
