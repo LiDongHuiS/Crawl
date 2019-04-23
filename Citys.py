@@ -28,17 +28,20 @@ class City:
         town = xp('//strong/a/text()')
         if city == '北京' or city == '天津' or city == '上海' or city == '重庆':
             city = city + '市'
-        elif city == '澳门':
+        if city == '澳门':
             city = city + '特别行政区'
-        elif city == '甘肃省' or city == '浙江省' or city == '香港特别行政区':
+        if city == '内蒙古':
+            city = city + '自治区'
+        if '省' in city or city == '香港特别行政区':
             city = city
-        else:
+        if '市' not in city and '省' not in city and '自治区' not in city and '行政区' not in city:
             city = city + '省'
 
         for i in range(2, len(town) + 2):
             town_html = xp('//tr[{i}]/td[1]/strong/a/text()'.format(i=i))[0]
             administrative_divisions = xp('//tr[{i}]/td[6]/a/text()'.format(i=i))
-            # print(city+town_html)
+            print(city)
+            print(city+town_html)
             for administrative_division in administrative_divisions:
                 print(city + town_html + administrative_division)
 
