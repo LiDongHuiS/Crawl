@@ -2,8 +2,6 @@
 
 import requests
 from lxml import etree
-# from lxml.html import etree
-# from bs4 import BeautifulSoup
 
 
 class City:
