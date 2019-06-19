@@ -1,6 +1,6 @@
 # encoding:utf-8
 
-import requests, time, csv, os
+import time, os
 from selenium import webdriver
 
 
