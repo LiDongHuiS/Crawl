@@ -1,7 +1,6 @@
 # encoding:utf-8
 
 import requests, time, csv, os
-from lxml import etree
 from selenium import webdriver
 
 
